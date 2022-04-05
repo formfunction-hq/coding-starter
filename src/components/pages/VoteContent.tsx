@@ -12,6 +12,10 @@ export interface VoteContentProps {
 }
 
 const VoteContent = (props: VoteContentProps) => {
+  const imageStyle = {
+    width: 100,
+    height: 100
+  };
   return (
     <div>
       Application {props.index}/{props.total}
@@ -21,8 +25,9 @@ const VoteContent = (props: VoteContentProps) => {
       {props.submission.userFullname}
       <br />
       {props.submission.assets.map((a) => {
-        return (<img src={a.src} alt={a.src}/>)
+        return (<img src={a.src} alt={a.src} style={imageStyle}/>)
       })}
+      <br />
       <button onClick={() => props.onDownvote(props.submission.id)}>Downvote</button>
       <button onClick={() => props.onUpvote(props.submission.id)}>Upvote</button>
       <br />

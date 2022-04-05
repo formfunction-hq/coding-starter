@@ -30,8 +30,8 @@ export default class VoteService {
     if (!last) return  undefined
     return {
       submission: last,
-      index: 0,
-      total: 1
+      index: results.length + 1,
+      total: EXAMPLE_SUBMISSIONS.length
     }
   }
 
