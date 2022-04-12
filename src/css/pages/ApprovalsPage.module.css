@@ -18,13 +18,3 @@
   padding: 42px;
   width: 900px;
 }
-
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 33.33%;
-  padding: 5px;
-  width: 100%;
-}
