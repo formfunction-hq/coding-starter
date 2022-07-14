@@ -6,6 +6,8 @@ export type Submission = {
     contentType: string;
     src: string;
   }[];
+  upvotes: number;
+  downvotes: number;
 };
 
 const EXAMPLE_SUBMISSIONS: Submission[] = JSON.parse(`
